@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modification
+	application="Heroes of Newerth"
+	appversion="*"
+	mmversion="*"
+	name="Movable Scoreboard"
+	version="1.0"
+	date="2018-09-06"
+	description="Makes the scoreboard more customizable by making them movable frames in HoN 4.0."
+	author="Alcazer (Firstly created by happyasthma : 01.10.2017)"
+	weblink="https://github.com/Alcazer/HoN-Movable-Scoreboard"
+	updatecheckurl="http://raw.githubusercontent.com/Alcazer/HoN-Movable-Scoreboard/master/version.txt"
+	updatedownloadurl="http://github.com/Alcazer/HoN-Movable-Scoreboard/releases/download/Latest/Movable_Scoreboard.honmod"
+>
+	<!-- Classic UI -->
+	<editfile name="ui/game_legacy.interface">
+		<find><![CDATA[	<panel name="Nstatusboard"]]></find>
+		<insert position="before"><![CDATA[	<instance name="movf_frame" id="Nstatusboard" textid="Status Board"/>]]></insert>
+	</editfile>
+
+	<!-- Razor UI -->
+	<editfile name="ui/game_apex.interface">
+		<find><![CDATA[	<panel name="Nstatusboard"]]></find>
+		<insert position="before"><![CDATA[	<instance name="movf_frame" id="Nstatusboard" textid="Status Board"/>]]></insert>
+	</editfile>
+
+	<!-- Sentinel UI -->
+	<editfile name="ui/game_garena_other.interface">
+		<find><![CDATA[	<panel name="Nstatusboard"]]></find>
+		<insert position="before"><![CDATA[	<instance name="movf_frame" id="Nstatusboard" textid="Status Board"/>]]></insert>
+	</editfile>
+
+	<!-- Other file -->
+	<editfile name="ui/game_garena.interface">
+		<find><![CDATA[	<panel name="Nstatusboard"]]></find>
+		<insert position="before"><![CDATA[	<instance name="movf_frame" id="Nstatusboard" textid="Status Board"/>]]></insert>
+	</editfile>
+</modification>
